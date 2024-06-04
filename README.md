@@ -1,50 +1,80 @@
 # Smart-Refrigirator-Using-Bolt-IoT
 
-
-Problem Statement
+# Problem Statement
 In the era of smart homes, enhancing household appliances with IoT capabilities has become essential for convenience, efficiency, and safety. One such innovation is the development of a smart refrigerator that can detect and notify the user of its door status. This project aims to create a proof of concept for a smart refrigerator lighting system using the Bolt IoT platform. The system will utilize data from a Light Dependent Resistor (LDR) and a push button to determine and communicate the state of the refrigerator door.
 
-Objective
+# Objective
 To design and implement a smart lighting system for a refrigerator that:
 
-Detects whether the refrigerator door is open or closed using an LDR and a push button.
-Sends an SMS notification to the user whenever the state of the door changes.
-Functional Requirements
-Data Collection:
-Use the LDR to measure light intensity inside the refrigerator.
-Use the push button to determine if the door is physically pressed (closed) or released (open).
-State Determination:
-Door Open: High light intensity (bright) and button released.
-Door Closed: Low light intensity (dark) and button pressed.
-Notification System:
-Send an SMS with the current state of the door whenever there is a change in its status.
-Things used in this project
-Hardware components
-Bolt IoT Bolt Wifi Module
-LDR Sensor
-Resistor 10k ohm
-Breadboard
-Pushbuttom switch
-Jumper wires 
-Software apps and online services
-Bolt IoT Bolt Cloud
-Twilio SMS service
-Replit
-Gathering all required components
-These are the components required
+1.Detects whether the refrigerator door is open or closed using an LDR and a push button.
+2.Sends an SMS notification to the user whenever the state of the door changes.
 
-1. Bolt WiFi Module
+# Functional Requirements
+1.Data Collection:
+     Use the LDR to measure light intensity inside the refrigerator.
+     Use the push button to determine if the door is physically pressed (closed) or released (open).
+2.State Determination:
+     Door Open: High light intensity (bright) and button released.
+     Door Closed: Low light intensity (dark) and button pressed.
+3.Notification System:
+     Send an SMS with the current state of the door whenever there is a change in its status.
 
-This image has an empty alt attribute; its file name is b.jpeg
-2. LDR (Light Dependent Resistor)
+# Things used in this project
+# Hardware components
+1.Bolt IoT Bolt Wifi Module
+2.LDR Sensor
+3.Resistor 10k ohm
+4.Breadboard
+5.Pushbuttom switch
+6.Jumper wires 
+# Software apps and online services
+1.Bolt IoT Bolt Cloud
+2.Twilio SMS service
+3.Replit
 
-This image has an empty alt attribute; its file name is ldr.jpeg
-3. PushButton
 
-This image has an empty alt attribute; its file name is bb.jpeg
-4. Resistor 10K
 
-This image has an empty alt attribute; its file name is 111.jpeg
+<!-- wp:heading {"level":3} -->
+<h3 id="toc-gathering-all-required-components-3">Gathering all required components</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>These are the components required</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>1. Bolt WiFi Module</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24179,"width":399,"height":149,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://projectsubmission.boltiot.com/wp-content/uploads/2024/06/b.jpeg" alt="" class="wp-image-24179" width="399" height="149"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>2. LDR (Light Dependent Resistor)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24178,"width":210,"height":130,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://projectsubmission.boltiot.com/wp-content/uploads/2024/06/ldr.jpeg" alt="" class="wp-image-24178" width="210" height="130"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>3. PushButton</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24180,"width":186,"height":186,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://projectsubmission.boltiot.com/wp-content/uploads/2024/06/bb.jpeg" alt="" class="wp-image-24180" width="186" height="186"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>4. Resistor 10K</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24181,"width":165,"height":165,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://projectsubmission.boltiot.com/wp-content/uploads/2024/06/111.jpeg" alt="" class="wp-image-24181" width="165" height="165"/></figure>
+<!-- /wp:image -->
+
+
 Step 1: Building the circuit
 Ensure that the Bolt Module is not powered on while connecting the circuit to prevent short circuits.
 Connect the LDR:
